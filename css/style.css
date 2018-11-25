@@ -14,8 +14,8 @@ body {
   font-family: "Poppins", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.7;
-  color: #666666;
+/*  line-height: 1.7;
+*/  color: #666666;
   background: #fff; }
 
 #page {
@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6, figure {
       .colorlib-nav .top {
         padding-bottom: 3em; } }
   .colorlib-nav .top-menu {
-    padding: 30px 0 0 0; }
+    /*padding: 30px 0 0 0;*/ }
     @media screen and (max-width: 768px) {
       .colorlib-nav .top-menu {
         padding: 0; } }
@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6, figure {
         -o-transition: 0.5s;
         transition: 0.5s; }
         .colorlib-nav ul li a:hover, .colorlib-nav ul li a:focus, .colorlib-nav ul li a.active {
-          color: #69cb6a; }
+          color: white; }
       .colorlib-nav ul li.has-dropdown {
         position: relative; }
         .colorlib-nav ul li.has-dropdown .dropdown {
@@ -222,9 +222,10 @@ h1, h2, h3, h4, h5, h6, figure {
               .colorlib-nav ul li.has-dropdown .dropdown li a:hover {
                 color: #fff; }
         .colorlib-nav ul li.has-dropdown:hover a, .colorlib-nav ul li.has-dropdown:focus a {
-          color: #69cb6a; }
+          color: green; }
       .colorlib-nav ul li.active > a {
-        color: #69cb6a; }
+        
+        background-color:#69cb6a; }
   .colorlib-nav .btn-cta {
     margin-bottom: 0;
     text-align: right;
