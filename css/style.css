@@ -393,7 +393,7 @@ h1, h2, h3, h4, h5, h6, figure {
       padding: 3em 0; } }
 
 #colorlib-footer {
-  padding: 7em 0 0 0; }
+  }
 
 #colorlib-intro {
   position: relative;
@@ -1857,4 +1857,8 @@ h1, h2, h3, h4, h5, h6, figure {
 .fa-instagram {
  background: #a4c639;
    color: white;
+}
+.menubar{
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
