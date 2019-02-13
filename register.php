@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>YourBabySurgeon.</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="He is always enthusiastic in updating himself with the latest and recent advances by attending workshops and conferences. He works on the principle of 5D'S (Dedication, Devotion , Disciple and Discrimination and Determination) in his regular practice. His areas of interest are Minimal access surgery and neonatal surgery. His Vision is To work together with obstetricians and pediatricians for early detection and management of congenital anomalies to get good results for the upcoming youngsters. To educate and engage parents in decision making and management of their children's medical ailments." content="" />
+      <meta name="Dr G Venkata Subbarao,Consultant, Neonatal, Pediatric Surgeon" content="" />
+      <meta name="Dr G Venkata Subbarao" content="" />
+      <meta name="author" content="" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+       <style >
+
+      .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.buttonColor:hover {
+  background-color: #8B4513;
+  color: white;
+}
+input[type='checkbox'] {
+    width: 1em;
+    height: 1em;
+}
+</style>
+
+      <!-- Facebook and Twitter integration -->
+     
+      <!-- Modernizr JS -->
+      <!-- FOR IE9 below -->
+      <!--[if lt IE 9]>
+      <script src="js/respond.min.js"></script>
+      <![endif]-->
+
+
+   </head>
+   <body>
+    
+          
+      <h2 style="text-align: center; margin-top: 20px;margin-bottom: 50px;">Hanuman Chalisa – The Best antidote to Stress<span style="margin-left: 40px;"> <a href="#regform" target="_blank"> <button class="button buttonColor" >Register Here</button></a></span>
+</h2>
+      <div class="container">
+         <div class="container" style="margin-bottom: 50px;">
+            <div class=" col-md-12 col-sm-12">
+            <p>
+               There won’t be any Hindu who is not aware of Hanuman Chalisa. From time immemorial we have been chanting Hanuman Chalisa to pay our reverence to Him.  Why do we pray to Hanumanji? We pray to him for giving us physical and mental strength, to ward off the negative/evil influences from our lives, to obliterate our timidity/cowardice and to sharpen our intellect, fulfil our wishes, remove obstacles. This is what we were taught by our elders.
+            </p>
+            <p>
+               But …..what we are not aware is that “ HANUMAN CHALISA IS THE BEST ANTIDOTE TO THE STRESS” i.e., reciting Hanuman Chalisa  will make us handle anything and everything in all aspects of our lives.
+            </p>
+            <p>Now a days it is very common, that we come across the word STRESS. Exams stress, work stress, family stress, financial stress etc. like that it became a part of our life. All our health ailments are because of the stress. If Stress is the SARVA ROGA KARINI, Hanuman Chalisa is the SARVA ROGA NIVARINI. Because of stress, we won’t be able to discharge our duties (Studies, exams, work etc.,) to the utmost potential we can do. Reciting Hanuman Chalisa will make us free from the stress, improving concentration, memory, grasping power and all our mental faculties.</p>
+            <p>Patanjali, the father of yoga, has stressed that focus on meaning during recitation of God’s name is beneficial
+               There is a saying in English, “ tell me and I forget, teach me and I remember, involve me and I learn. This contest is to involve you all so that we all experience the change within.  By participating in this contest you will understand the inner meaning of each verse, assimilate the essence and also the ability to  expresses  the same.</p>
+         </div>
+       </div>
+      <div class="container" id="regform" style=" border: 1px solid #ACACAC;
+  padding: 30px;margin-bottom: 10px;  border-radius: 25px;
+">
+<h2 style="text-align: center; "> Registration Form</h2>
+            <div class="row"  style="margin-top: 50px;">
+                <form action="registerform.php" method="post" enctype="multipart/form-data>
+                  <div class="row ">
+                     <div class="col-md-5 co-md-push-1">
+                        <input type="text" name="fullName" id="fullName" class="form-control mb" placeholder=" Name (As in Aadhar card)" required>
+                     </div>
+                     <div class="col-md-5 co-md-push-1">
+                        <input type="text" name="parentsName" id="pareName" class="form-control" placeholder="Father/Mother Name" required>
+                     </div>
+                  </div>
+                  <div class="row " style="margin-top: 15px;">
+                     <div class="col-md-5 co-md-push-1">
+                        <input type="text" name="contactNumber" id="contactNumber" class="form-control mb" placeholder="Contact Number" required>
+                     </div>
+                     <div class="col-md-5 co-md-push-1">
+                        <input type="email" name="emailId" id="emailId" class="form-control" placeholder=" Email address" required>
+                     </div>
+                  </div>
+                   <div class="row " style="margin-top: 15px;">
+                     <div class="col-md-5 co-md-push-1">
+                        <input type="text" name="contactAddress" id="contactAddress" class="form-control mb" placeholder="  Contact Address" required>
+                     </div>
+                     <div class="col-md-5 co-md-push-1">
+                        <input type="text" name="pincode" id="pincode" class="form-control" placeholder=" Pin code" required>
+                     </div>
+                  </div>
+                   <div class="row " style="margin-top: 15px;">
+                     <div class="col-md-5 co-md-push-1">
+                              <label for="lname">Age:</label></br>
+
+                           <input type="radio" name="age" value="uptoTwelveyears" > 0-12 years
+                          <input type="radio" name="age" value="uptoNinteenyears"> 13-19 years
+                          <input type="radio" name="age" value="uptoThirtyNineyears"> 20-39 years  
+                           <input type="radio" name="age" value="aboveForty"> Above 40 years  
+
+                     </div>
+                     <div class="col-md-4 co-md-push-2">
+                              <label for="lname">Sex:</label></br>
+
+                           <input type="radio" name="sex" value="male" > Male
+                          <input type="radio" name="sex" value="female"> Female
+                          
+                     </div>
+                   
+                  </div>
+                   <div class="row " style="margin-top: 15px;">
+                     <div class="col-md-5 co-md-push-1">
+                        <label for="lname">Upload Aadhar card:</label></br>
+
+                        <input type="file" name="aadharCard" id="aadharCard"   required>
+                     </div>
+                     <div class="col-md-5 co-md-push-1" >
+                        <label for="lname">Upload Photo :</label></br>
+
+                        <input type="file" name="photo" id="photo"   required>
+                     </div>
+                  </div>
+                     <div class="row " style="margin-top: 15px;">
+
+                     <div class="col-md-4 co-md-push-2">
+                              <label for="lname">Profession:</label></br>
+
+                           <input type="radio" name="profession" value="Student" > Student
+                          <input type="radio" name="profession" value="Non-student"> Non-student
+                          
+                     </div>
+                      <div class="col-md-4 col-md-push-1 "  >
+                        <div id="student" style="display: none">
+                           <input type="text" name="institute"  class="form-control" placeholder=" College/Institute Name"  >
+                           <input type="text" name="class"  class="form-control" placeholder=" Class" style="margin-top: 10px;"  >
+                        </div>
+
+                        <div  id="nonStudent" style="display: none" >
+                           <input type="text" name="professionName"  class="form-control" placeholder=" Profession Name "  >
+                        </div>
+                     </div>
+                  </div>
+                   <div class="row " style="margin-top: 15px;">
+
+                     <div class="col-md-12 co-md-push-12">
+                              <label for="lname">Category of interest:</label></br>
+
+                         <span style="margin-right: 20px;"> <input type="checkbox" name="vocal" value="Vocal"  > Vocal</span> 
+                           <span style="margin-right: 20px;"> <input type="checkbox" name="category[]" value="Instrumental" > Instrumental</span> 
+                           <span style="margin-right: 20px;"> <input type="checkbox" name="category[]" value="Writing"> Writing</span> 
+                            <span style="margin-right: 20px;"><input type="checkbox" name="category[]" value="Drawing"> Drawing</span> 
+                            <span style="margin-right: 20px;"><input type="checkbox" name="category[]" value="Painting"> Painting</span> 
+                            <span style="margin-right: 20px;"><input type="checkbox" name="category[]" value="Classical Dance"> Classical Dance</span> 
+
+                          
+                     </div>
+                   </div>
+                  <div class="form-group text-center" style="margin-top: 15px;">
+                  <input type="submit" name="submit" value="Submit" class="btn btn-primary">
+                  </div>
+                  </form>     
+         </div>
+       </div>
+         </div>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+      <!-- jQuery -->
+      <script type="text/javascript">
+
+$(function() {
+    $('input[name="profession"]').on('click', function() {
+        if ($(this).val() == 'Student') {
+            $('#student').show();
+            $('#nonStudent').hide();
+
+        }
+        else {
+             $('#nonStudent').show();
+            $('#student').hide();
+        }
+    });
+});
+      </script>
+     
+   </body>
+</html>
