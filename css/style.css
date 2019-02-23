@@ -11,9 +11,9 @@
 *
 * ======================================================= */
 body {
-  font-family: "Poppins", Arial, sans-serif;
+font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
 /*  line-height: 1.7;
 */  color: #666666;
   background: #fff; }
@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, h6, figure {
       .colorlib-nav #colorlib-logo a i {
         font-size: 34px; }
   .colorlib-nav .menu-wrap {
-    background: #3c97e8;
+    background: #B8860B;
     padding: 15px 0;
     width: 100%; }
   .colorlib-nav .menu-1 {
@@ -163,8 +163,8 @@ h1, h2, h3, h4, h5, h6, figure {
       list-style: none;
       display: inline;
       font-weight: 400;
-      text-transform: uppercase;
-      font-size: 14px;
+/*      text-transform: uppercase;
+*/      font-size: 14px;
       letter-spacing: 1px; }
       .colorlib-nav ul li a {
         padding: 15px;
@@ -228,7 +228,7 @@ h1, h2, h3, h4, h5, h6, figure {
           color: green; }
       .colorlib-nav ul li.active > a {
         
-        background-color:#69cb6a; }
+        background-color:#800000; }
   .colorlib-nav .btn-cta {
     margin-bottom: 0;
     text-align: right;
