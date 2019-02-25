@@ -18,6 +18,24 @@ font-family: 'Open Sans', sans-serif;
 */  color: #666666;
   background: #fff; }
 
+  .accordionTitle{
+color: #5c5c5c;
+ font-size:20px;
+ font-family: 'Open Sans', sans-serif;
+
+  }
+  .accordionsubtitle{
+color: #5c5c5c;
+ font-size:18px;
+ font-family: 'Open Sans', sans-serif;
+ margin-left: 30px;
+ margin-top: 10px;
+  }
+  .accordionArrow{
+    color: #5c5c5c;; margin-right: 10px; 
+;font-size: 20px;
+  }
+
 #page {
   position: relative;
   overflow-x: hidden;

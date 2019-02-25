@@ -72,6 +72,8 @@ input[type='checkbox'] {
       <div class="container" id="regform" style=" border: 1px solid #ACACAC;
   padding: 30px;margin-bottom: 10px;  border-radius: 25px;
 ">
+              <div class="col-lg-11 col-md-11 col-sm-11 col-md-offset-1 col-xs-12">
+
 <h2 style="text-align: center; "> Registration Form</h2>
             <div class="row"  style="margin-top: 50px;">
                 <form action="registerform.php" method="post" enctype="multipart/form-data>
@@ -99,7 +101,7 @@ input[type='checkbox'] {
                         <input type="text" name="pincode" id="pincode" class="form-control" placeholder=" Pin code" required>
                      </div>
                   </div>
-                   <div class="row " style="margin-top: 15px;">
+                   <div class="row " style="margin-top: 15px; font-weight: normal; font-size: 16px;">
                      <div class="col-md-5 co-md-push-1">
                               <label for="lname">Age:</label></br>
 
@@ -118,19 +120,8 @@ input[type='checkbox'] {
                      </div>
                    
                   </div>
-                   <div class="row " style="margin-top: 15px;">
-                     <div class="col-md-5 co-md-push-1">
-                        <label for="lname">Upload Aadhar card:</label></br>
-
-                        <input type="file" name="aadharCard" id="aadharCard"   required>
-                     </div>
-                     <div class="col-md-5 co-md-push-1" >
-                        <label for="lname">Upload Photo :</label></br>
-
-                        <input type="file" name="photo" id="photo"   required>
-                     </div>
-                  </div>
-                     <div class="row " style="margin-top: 15px;">
+                  
+                     <div class="row " style="margin-top: 15px;font-weight: normal; font-size: 16px;">
 
                      <div class="col-md-4 co-md-push-2">
                               <label for="lname">Profession:</label></br>
@@ -139,7 +130,7 @@ input[type='checkbox'] {
                           <input type="radio" name="profession" value="Non-student"> Non-student
                           
                      </div>
-                      <div class="col-md-4 col-md-push-1 "  >
+                      <div class="col-md-4 col-md-push-1 "style="font-weight: normal; font-size: 16px;"  >
                         <div id="student" style="display: none">
                            <input type="text" name="institute"  class="form-control" placeholder=" College/Institute Name"  >
                            <input type="text" name="class"  class="form-control" placeholder=" Class" style="margin-top: 10px;"  >
@@ -152,7 +143,7 @@ input[type='checkbox'] {
                   </div>
                    <div class="row " style="margin-top: 15px;">
 
-                     <div class="col-md-12 co-md-push-12">
+                     <div class="col-md-12 co-md-push-12" style="font-weight: normal; font-size: 16px;">
                               <label for="lname">Category of interest:</label></br>
 
                          <span style="margin-right: 20px;"> <input type="checkbox" name="vocal" value="Vocal"  > Vocal</span> 
@@ -168,7 +159,8 @@ input[type='checkbox'] {
                   <div class="form-group text-center" style="margin-top: 15px;">
                   <input type="submit" name="submit" value="Submit" class="btn btn-primary">
                   </div>
-                  </form>     
+                  </form>  
+                  </div>   
          </div>
        </div>
          </div>
