@@ -4,7 +4,7 @@ error_reporting(0);
 
 session_start();
 
-include('db/db_con.php');
+include('db_conns.php');
 
 if(isset($_POST['submit']))
 
@@ -25,9 +25,9 @@ if(isset($_POST['submit']))
 
 		$sex = $_POST['sex'];
 
-		$profession = $_POST['profession'];
+		$student = $_POST['profession'];
 
-		$professionName = $_POST['professionName'];
+		$profession = $_POST['professionName'];
 
 		$class = $_POST['class'];
 
@@ -42,39 +42,15 @@ if(isset($_POST['submit']))
  			$categoryNew .= $categoryNew1 . ","; 
  		} 
 
-		$aadharCard = $_FILES['aadharCard']['name'];
-		$size = $_FILES['aadharCard']['size'];
-		$type = $_FILES['aadharCard']['type'];
-		$tmp_name = $_FILES['aadharCard']['tmp_name'];
-
-		if(isset($aadharCard) && !empty($aadharCard)){
-		$location = "UploadedFiles";
-		if(move_uploaded_file($tmp_name, $location.$aadharCard)){
-			alert(Successfully);
-		}else{
-			alert(Failed);
-		}
-		}
-
-
-		$photo = $_POST['photo'];
-
 		date_default_timezone_set("Asia/Kolkata");
 
 		$today = date('Y-m-d h:i:s a', time());
 
+        $insert = "insert into stressbusterChallange (fullName, parentsName, mobileNumber,  emailID, address, pincode, age, sex, student ,profession,class,instituteDetails,category,status,date ) values (\"$fullName\" ,\"$parentsName\" ,\"$contactNumber\" , \"$emailID\" , \"$contactAddress\" , \"$pincode\",\"$age\", \"$sex\",\"$student\",\"$professionName\",\"class\",\"$institute\", \"$categoryNew\",1, \"$today\")";
 
-		
-			
+		$insertInfo = mysqli_query($db_connection , $insert);
 
-				$insert = "insert into hanumanchalisaevent (fullName, parentsName, contactNumber,  emailID, contactAddress, pincode, age, sex, aadharCard, photo, profession ,professionName, class, institute,category, date ) values (\"$fullName\" ,\"$parentsName\" ,\"$contactNumber\" , \"$emailID\" , \"$contactAddress\" , \"$pincode\",    \"$age\", \"$sex\",   \"$aadharCard\",   \"$photo\",  \"$profession\",  \"$professionName\",   \"$class\",   \"$institute\", \"$categoryNew\", \"$today\")";
-
-				$insertInfo = mysqli_query($db_connection , $insert);
-
-				 echo  $insert;
-
-			
-
+		echo  $insert;
 		
 		// header("location: register.php");
 	}
