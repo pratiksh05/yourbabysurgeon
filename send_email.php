@@ -10,12 +10,12 @@ $message = $_POST['message'];
 
 if(isset($fname) || isset($lname) || isset($email) || isset($subject) || isset($message))
 {
-$message1 = "Hi ". $fname . $lname ." is seeking for an Appointment with the below concern "."<br>". $message;
+$message1 = "Hi ". $fname . $lname ." has sent you below feed back "."<br>". $message;
 
 echo $message1;
 
 $headers = 'From: info@yourbabysurgeon.com';
-//mail($to,$subject,$message1,$headers);
+mail($to,$subject,$message1,$headers);
 }
 else
 {

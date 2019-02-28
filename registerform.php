@@ -46,11 +46,24 @@ if(isset($_POST['submit']))
 
 		$today = date('Y-m-d h:i:s a', time());
 
-        $insert = "insert into stressbusterChallange (fullName, parentsName, mobileNumber,  emailID, address, pincode, age, sex, student ,profession,class,instituteDetails,category,status,date ) values (\"$fullName\" ,\"$parentsName\" ,\"$contactNumber\" , \"$emailID\" , \"$contactAddress\" , \"$pincode\",\"$age\", \"$sex\",\"$student\",\"$professionName\",\"class\",\"$institute\", \"$categoryNew\",1, \"$today\")";
+		$fetchDetails = "SELECT count($contactNumber) as mobileNumber from stressbusterChallange where mobileNumber = \"$contactNumber\"";
 
-		$insertInfo = mysqli_query($db_connection , $insert);
+		$fetchedDetails = mysqli_query($db_connection , $fetchDetails);
 
-		echo  $insert;
+		$result = mysqli_fetch_array($fetchedDetails);
+
+		if($result['mobileNumber'] > 0)
+		{
+		    echo "You have already registered! Please stay tuned for details";
+		}
+		else
+		{
+            $insert = "insert into stressbusterChallange (fullName, parentsName, mobileNumber,  emailID, address, pincode, age, sex, student ,profession,class,instituteDetails,category,status,date ) values (\"$fullName\" ,\"$parentsName\" ,\"$contactNumber\" , \"$emailID\" , \"$contactAddress\" , \"$pincode\",\"$age\", \"$sex\",\"$student\",\"$profession\",\"$class\",\"$institute\", \"$categoryNew\",1, \"$today\")";
+
+            $insertInfo = mysqli_query($db_connection , $insert);
+
+            echo  "You have registered successfully ! Please stay tuned for more details"
+		}
 		
 		// header("location: register.php");
 	}
