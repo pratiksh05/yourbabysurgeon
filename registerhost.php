@@ -33,7 +33,9 @@ if(isset($_POST['submit']))
 
 		if($result['mobileNumber'] > 0)
 		{
-		    echo "You have already registered ! Stay tuned for more details";
+			echo '<div>
+		    		<p style="text-align:center;color:green;font-weight:bold;font-size:36px; margin-top:100px;font-family:font-family: Lucida Console, Monaco, monospace ;">You have already registered ! Stay tuned for more details</p>
+		    	</div>';
 		}
 		else
 		{
