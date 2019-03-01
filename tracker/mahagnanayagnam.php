@@ -1,6 +1,6 @@
 <?php
    error_reporting(0);
-   
+
    ?>
 <!DOCTYPE html>
 <html>
@@ -17,7 +17,7 @@
          <div class="row" style="background-color:#517a7f;">
             <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
                <div class="mainHeading" align="left" style="font-size:50px">
-                  <img src="images/image.png" width="150" height="" alt="logo">
+                  <h1 align="center">Hanuman Chalisa Maha Gnana Yagnam Tracker</h1>
                </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xs-12">
@@ -33,48 +33,42 @@
                         <thead>
                            <tr>
                               <th class="alignTextToCenter">#</th>
-                              <th class="alignTextToCenter">Name</th>
-                              <th class="alignTextToCenter">Father/Mother Name</th>
+                              <th class="alignTextToCenter">Host Name</th>
+                              <th class="alignTextToCenter">Address</th>
                               <th class="alignTextToCenter">Email ID</th>
                               <th class="alignTextToCenter">Mobile Number</th>
-                              <th class="alignTextToCenter">Address</th>
-                              <th class="alignTextToCenter">Age</th>
-                              <th class="alignTextToCenter">Sex</th>
-                              <th class="alignTextToCenter">Profession</th>
+                              <th class="alignTextToCenter">Date of Interest</th>
                               <th class="alignTextToCenter">Category</th>
+                              <th class="alignTextToCenter">Date</th>
                            </tr>
                         </thead>
                         <tbody>
                            <?php
-                                include('db_conn.php');
-                              
-                                $fetchRequests = "";
+                                include('../db_conns.php');
 
-                                // SELECT  customerdetails.id,customerdetails.firstName,customerdetails.organization,customerdetails.emailID,customerdetails.mobileNumber,customerdetails.sub_total  ,customerdetails.t_shirts,customerdetails.rides,customerdetails.currentDate,transaction.status from customerdetails join transaction on customerdetails.id=transaction.customerId
-                              
+                                $fetchRequests = "select hostName,hostAddress,mobileNumber,emailID,dateofInterest,category,date from mahagnanayagam where status = 1";
+
                                 $fetchedRequests = mysqli_query($db_connection , $fetchRequests);
-                              
+
                                 $k = 1;
-                              
+
                                 while($availableRequests = mysqli_fetch_array($fetchedRequests))
-                              
+
                                 {
                                   echo '<tr>';
-                              
+
                                   echo '<td class="alignTextToCenter">' . $k . '</td>';
-                                  echo '<td>' . $availableRequests['name'] . '</td>';
-                                  echo '<td>' . $availableRequests['parentsname'] . '</td>';
+                                  echo '<td>' . $availableRequests['hostName'] . '</td>';
+                                  echo '<td>' . $availableRequests['hostAddress'] . '</td>';
                                   echo '<td>' . $availableRequests['emailID'] .'</td>';
                                   echo '<td>' . $availableRequests['mobileNumber'] . '</td>';
-                                  echo '<td>' . $availableRequests['address'] . '</td>';
-                                  echo '<td>' . $availableRequests['age'] . '</td>';
-                                  echo '<td>' . $availableRequests['sex'] . '</td>';
-                                  echo '<td>' . $availableRequests['profession'] . '</td>';
+                                  echo '<td>' . $availableRequests['dateofInterest'] . '</td>';
                                   echo '<td>' . $availableRequests['category'] . '</td>';
-                                  $k++; 
+                                  echo '<td>' . $availableRequests['date'] . '</td>';
+                                  $k++;
                                   echo '</tr>';
                                 }
-                              
+
                               ?>
                         </tbody>
                      </table>
@@ -94,9 +88,9 @@
       $(document).ready(function() {
        $('#example').DataTable({
        "order": [[ 8, "desc" ]]
-      
+
        } );
       });
-      
+
    </script>
 </html>

@@ -41,7 +41,7 @@ if(isset($_POST['submit']))
 
             $insertInfo = mysqli_query($db_connection , $insert);
 
-            echo  $insert;
+            echo "You have registered successfully ! Please stay tuned for more details";
         }
 
 		// header("location: register.php");

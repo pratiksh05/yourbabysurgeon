@@ -65,7 +65,7 @@ if(isset($_POST['submit']))
             echo  "You have registered successfully ! Please stay tuned for more details"
 		}
 		
-		// header("location: register.php");
+		 header("location: acknowledgment.php");
 	}
 	
 
