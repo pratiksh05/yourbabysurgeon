@@ -19,8 +19,6 @@ if(isset($_POST['submit']))
 
 		$eventdate = $_POST['eventdate'];
 
-		$category = $_POST['category'];
-
 		date_default_timezone_set("Asia/Kolkata");
 
 		$today = date('Y-m-d h:i:s a', time());
@@ -33,15 +31,19 @@ if(isset($_POST['submit']))
 
 		if($result['mobileNumber'] > 0)
 		{
-		    echo "You have already registered ! Stay tuned for more details";
+			echo '<div>
+		    		<p style="text-align:center;color:green;font-weight:bold;font-size:36px; margin-top:100px;font-family:font-family: Lucida Console, Monaco, monospace ;">You have already registered ! Stay tuned for more details</p>
+		    	</div>';
 		}
 		else
 		{
-            $insert = "insert into mahagnanayagam (hostName,hostAddress,mobileNumber,emailID,dateofInterest,category,status,date ) values (\"$fullName\" ,\"$address\", \"$contactNumber\", \"$emailID\", \"$eventdate\", \"$category\",1, \"$today\")";
+            $insert = "insert into mahagnanayagam (hostName,hostAddress,mobileNumber,emailID,dateofInterest,status,date ) values (\"$fullName\" ,\"$address\", \"$contactNumber\", \"$emailID\", \"$eventdate\",1, \"$today\")";
 
             $insertInfo = mysqli_query($db_connection , $insert);
 
-            echo "You have registered successfully ! Please stay tuned for more details";
+            echo '<div>
+		    		<p style="text-align:center;color:green;font-weight:bold;font-size:36px; margin-top:100px;font-family:font-family: Lucida Console, Monaco, monospace ;">You have registered successfully ! Please stay tuned for more details</p>
+		    	</div>';
         }
 
 		// header("location: register.php");

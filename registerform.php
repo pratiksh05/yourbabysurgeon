@@ -54,7 +54,10 @@ if(isset($_POST['submit']))
 
 		if($result['mobileNumber'] > 0)
 		{
-		    echo "You have already registered! Please stay tuned for details";
+		    echo '<div>
+		    		<p style="text-align:center;color:green;font-weight:bold;font-size:36px; margin-top:100px;font-family:font-family: Lucida Console, Monaco, monospace ;">You have already registered! Please stay tuned for details</p>
+		    	</div>';
+
 		}
 		else
 		{
@@ -62,10 +65,14 @@ if(isset($_POST['submit']))
 
             $insertInfo = mysqli_query($db_connection , $insert);
 
-            echo  "You have registered successfully ! Please stay tuned for more details"
+ 				echo '<div>
+		    		<p style="text-align:center;color:green;font-weight:bold;font-size:36px; margin-top:100px;font-family:font-family: Lucida Console, Monaco, monospace ;">You have registered successfully ! Please stay tuned for more details</p>
+		    	</div>';
+
+
 		}
 		
-		 header("location: acknowledgment.php");
+		 //header("location: acknowledgment.php");
 	}
 	
 
