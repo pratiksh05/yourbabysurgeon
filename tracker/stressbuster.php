@@ -17,7 +17,7 @@
          <div class="row" style="background-color:#517a7f;">
             <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
                <div class="mainHeading" align="left" style="font-size:50px">
-                  <img src="images/image.png" width="150" height="" alt="logo">
+                  <h1 align="center">Hanuman Chalisa Stressbuster Challange Tracker</h1>
                </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xs-12">
@@ -34,22 +34,25 @@
                            <tr>
                               <th class="alignTextToCenter">#</th>
                               <th class="alignTextToCenter">Name</th>
+                              <th class="alignTextToCenter">Father/Mother Name</th>
                               <th class="alignTextToCenter">Email ID</th>
                               <th class="alignTextToCenter">Mobile Number</th>
                               <th class="alignTextToCenter">Address</th>
-                              <th class="alignTextToCenter">Date of Interest</th>
+                              <th class="alignTextToCenter">Age</th>
+                              <th class="alignTextToCenter">Sex</th>
+                              <th class="alignTextToCenter">Student</th>
+                              <th class="alignTextToCenter">Class</th>
+                              <th class="alignTextToCenter">College/Class</th>
+                              <th class="alignTextToCenter">Profession</th>
                               <th class="alignTextToCenter">Category</th>
-                              <th class="alignTextToCenter"></th>
-                              <th class="alignTextToCenter"></th>
+                              <th class="alignTextToCenter">Date</th>
                            </tr>
                         </thead>
                         <tbody>
                            <?php
-                                include('db_conn.php');
+                                include('../db_conns.php');
 
-                                $fetchRequests = "";
-
-                                // SELECT  customerdetails.id,customerdetails.firstName,customerdetails.organization,customerdetails.emailID,customerdetails.mobileNumber,customerdetails.sub_total  ,customerdetails.t_shirts,customerdetails.rides,customerdetails.currentDate,transaction.status from customerdetails join transaction on customerdetails.id=transaction.customerId
+                                $fetchRequests = "select fullName, parentsName, mobileNumber,  emailID, address, age, sex, student ,profession,class,instituteDetails,category,date from stressbusterChallange where status = 1";
 
                                 $fetchedRequests = mysqli_query($db_connection , $fetchRequests);
 
@@ -61,12 +64,19 @@
                                   echo '<tr>';
 
                                   echo '<td class="alignTextToCenter">' . $k . '</td>';
-                                  echo '<td>' . $availableRequests['name'] . '</td>';
+                                  echo '<td>' . $availableRequests['fullName'] . '</td>';
+                                  echo '<td>' . $availableRequests['parentsName'] . '</td>';
                                   echo '<td>' . $availableRequests['emailID'] .'</td>';
                                   echo '<td>' . $availableRequests['mobileNumber'] . '</td>';
                                   echo '<td>' . $availableRequests['address'] . '</td>';
-                                  echo '<td>' . $availableRequests['date'] . '</td>';
+                                  echo '<td>' . $availableRequests['age'] . '</td>';
+                                  echo '<td>' . $availableRequests['sex'] . '</td>';
+                                  echo '<td>' . $availableRequests['student'] . '</td>';
+                                  echo '<td>' . $availableRequests['class'] . '</td>';
+                                  echo '<td>' . $availableRequests['instituteDetails'] . '</td>';
+                                  echo '<td>' . $availableRequests['profession'] . '</td>';
                                   echo '<td>' . $availableRequests['category'] . '</td>';
+                                  echo '<td>' . $availableRequests['date'] . '</td>';
                                   $k++;
                                   echo '</tr>';
                                 }

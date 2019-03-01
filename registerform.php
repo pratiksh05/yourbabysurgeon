@@ -72,7 +72,7 @@ if(isset($_POST['submit']))
 
 		}
 		
-		// header("location: register.php");
+		 //header("location: acknowledgment.php");
 	}
 	
 
