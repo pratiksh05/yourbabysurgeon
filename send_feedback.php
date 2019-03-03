@@ -13,7 +13,7 @@ if(isset($fname) || isset($lname) || isset($email) || isset($subject) || isset($
 {
 //$message1 = "Hi ". $fname . $lname ." has sent you below feedback "."<br>". $message;
     $name = $fname . ' ' . $lname;
-    $insert = "insert into feedback (name,emailID,subject,message,date) values (\"$name\",\"$email\",\"subject\",\"$message\",\"$today\")";
+    $insert = "insert into feedback (name,emailID,subject,message,date) values (\"$name\",\"$email\",\"$subject\",\"$message\",\"$today\")";
     $result = mysqli_query($db_connection,$insert);
     if($result)
     {

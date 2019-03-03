@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aff7e01b-3cdf-41d2-bde4-f045bdd6bf13" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/hanuman5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/register3.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracker/pregnancy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracker/feedback.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eventregistration.html" beforeDir="false" afterPath="$PROJECT_DIR$/eventregistration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experience.html" beforeDir="false" afterPath="$PROJECT_DIR$/experience.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/h2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/hanumanji.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/registration.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,11 +60,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tracker/pregnancy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="1474">
+              <caret line="67" column="33" lean-forward="true" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tracker/feedback.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="46" column="61" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -141,6 +142,7 @@
         <option value="$PROJECT_DIR$/registration.html" />
         <option value="$PROJECT_DIR$/eventregistration.html" />
         <option value="$PROJECT_DIR$/tracker/pregnancy.php" />
+        <option value="$PROJECT_DIR$/tracker/feedback.php" />
       </list>
     </option>
   </component>
@@ -182,6 +184,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tracker" />
       <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -223,7 +226,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30722000" />
+    <option name="totallyTimeSpent" value="31419000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -651,8 +654,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tracker/pregnancy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="1474">
+          <caret line="67" column="33" lean-forward="true" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tracker/feedback.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="46" column="61" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="61" />
         </state>
       </provider>
     </entry>
