@@ -1,7 +1,6 @@
 <?php
    error_reporting(0);
-
-   ?>
+?>
 <!DOCTYPE html>
 <html>
    <head>
@@ -35,6 +34,7 @@
                               <th class="alignTextToCenter">#</th>
                               <th class="alignTextToCenter">Name</th>
                               <th class="alignTextToCenter">Email ID</th>
+                              <th class="alignTextToCenter">Mobile Number</th>
                               <th class="alignTextToCenter">Subject</th>
                               <th class="alignTextToCenter">Message</th>
                               <th class="alignTextToCenter">Date</th>
@@ -44,7 +44,7 @@
                            <?php
                                 include('../db_conns.php');
 
-                                $fetchRequests = "select name,emailID,subject,message,date from feedback";
+                                $fetchRequests = "select name,emailID,mobile,subject,message,date from feedback";
 
                                 $fetchedRequests = mysqli_query($db_connection , $fetchRequests);
 
@@ -58,6 +58,7 @@
                                   echo '<td class="alignTextToCenter">' . $k . '</td>';
                                   echo '<td>' . $availableRequests['name'] . '</td>';
                                   echo '<td>' . $availableRequests['emailID'] .'</td>';
+                                  echo '<td>' . $availableRequests['mobile'] .'</td>';
                                   echo '<td>' . $availableRequests['subject'] . '</td>';
                                   echo '<td>' . $availableRequests['message'] . '</td>';
                                   echo '<td>' . $availableRequests['date'] . '</td>';
@@ -83,7 +84,7 @@
    <script>
       $(document).ready(function() {
        $('#example').DataTable({
-       "order": [[ 8, "desc" ]]
+       "order": [[ 0, "asc" ]]
 
        } );
       });
